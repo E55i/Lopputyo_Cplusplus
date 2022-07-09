@@ -1,11 +1,9 @@
 #include <iostream>
 #include <cstdlib> //exit- ja CLS-funktiot
-#include <chrono>
-#include <thread>
-#include <fstream>
-#include <string>
-#include <list>
-#include<sstream>
+#include <chrono> // duration-funktio
+#include <thread> 
+#include <fstream> //tiedostojen yhteydessä tarvittavat toiminnot
+#include <string> //string-ominaisuuden käyttö tiedostojen yhteydessä
 
 using namespace std;
 using std::cerr;
@@ -383,7 +381,7 @@ int main()
                     tila1=remove(tiedostoNimi1);
                     tila2=remove(tiedostoNimi2);
                     if(tila1==0&&tila2==0)
-                    {cout<<"\nKaikkien tyo- ja yrittajasuhteisten henkiloiden tiedot sisaltavay tiedostot on poistettu!\n";}
+                    {cout<<"\nKaikkien tyo- ja yrittajasuhteisten henkiloiden tiedot sisaltavat tiedostot on poistettu!\n";}
                     else
                     {cout<<"\nTiedoston poistaminen ei onnistunut tai sita ei loydy!\n";}
                 }
