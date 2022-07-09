@@ -71,14 +71,15 @@ int main()
       system("CLS");
 
         switch (a) {
-        case 1: {//TOIMII, tähän pitää lisätä vielä ID-numeron tarkistus, ettei tule kahta samaa
+        case 1: {
 
 
             int suhde = 0;
             string eNimi="";
             string sNimi="";
             int ika=0;
-            //halutaan että järjestelmä luo satunnaisesti ID-numeron. Rand-funktio luo ohjelman käynnistyksen yhteydessä joka kerta saman numeron, jos ei käytetä srand-funktiota
+            //halutaan että järjestelmä luo satunnaisesti ID-numeron.
+            //Rand-funktio luo ohjelman käynnistyksen yhteydessä joka kerta saman numeron, jos ei käytetä srand-funktiota
             srand(time(0));
             int ID=rand();
             string puhelin="";
